@@ -1,0 +1,72 @@
+
+/* ----- Variables ----- */
+$header-font: 'Varela Round', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+$purple: rgb(49, 39, 131);
+
+/* ----- Main Content ----- */
+
+body {
+  background: none;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $body-font;
+  font-size: 14px;
+  color: #333;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 3% auto;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2% 0;
+  background-color: $purple;
+  color: white;
+  width: 100%;
+}
+
+.list-users {
+  columns: 2;
+  max-height: 50%;
+  text-align: center;
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+form {
+  background: white;
+  margin: 5% auto 10%;
+}
+
+/* ----- Form ----- */
+
+
+
+/* ----- Typography ----- */
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: $header-font;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: $header-font;
+  text-align: center;
+}
+
+
+/* ----- Responsive Media ----- */
