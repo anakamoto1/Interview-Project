@@ -1,18 +1,18 @@
-
 /* ----- Variables ----- */
 $header-font: 'Varela Round', sans-serif;
 $body-font: 'Open Sans', sans-serif;
 
 $purple: rgb(49, 39, 131);
+$pink: rgb(175, 28, 99);
+$grey: #f2f2f2;
 
 /* ----- Main Content ----- */
-
 body {
   background: none;
   margin: 0 auto;
   padding: 0;
   font-family: $body-font;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
 }
 
@@ -26,7 +26,8 @@ body {
   margin: 3% auto;
 }
 
-header, footer {
+footer,
+header {
   text-align: center;
   padding: 2% 0;
   background-color: $purple;
@@ -38,23 +39,54 @@ header, footer {
   columns: 2;
   max-height: 50%;
   text-align: center;
+  padding: 5% 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 
   p:first-child {
     margin-top: 0;
   }
 }
 
+/* ----- Form ----- */
 form {
-  background: white;
-  margin: 5% auto 10%;
+  text-align: center;
+  margin: 5% auto;
+  border-radius: 6px;
+  border: 1px solid $grey;
+  box-shadow: 3px 3px 5px 0px rgba(194,194,194,1);
+  background-color: $grey;
+
+  input {
+    background: white;
+    width: 50%;
+    padding: 20px;
+    margin: 0px auto 30px;
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 16px 70px;
+    margin-left: 20px;
+    border-radius: 6px;
+    border: 2px solid $pink;
+    background: $pink;
+    color: white;
+    font-size: 16px;
+    font-family: $body-font;
+    text-transform: uppercase;
+
+    &:hover {
+      background: none;
+      color: $pink;
+      border: 2px solid $pink;
+    }
+  }
 }
 
-/* ----- Form ----- */
-
-
-
 /* ----- Typography ----- */
-
 h1 {
   font-size: 50px;
   font-weight: bold;
@@ -68,5 +100,10 @@ h2 {
   text-align: center;
 }
 
-
 /* ----- Responsive Media ----- */
+@media only screen and (max-width: 760px) {
+  button {
+    margin-bottom: 20px;
+    margin-left: 0!important;
+  }
+}
